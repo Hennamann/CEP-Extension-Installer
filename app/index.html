@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html style="width: 100%; height: 100%; overflow:hidden;">
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="vendor/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="src/messages.js"></script>
+    <script type="text/javascript" src="src/installer.js"></script>
+    <script type="text/javascript" src="src/main.js"></script>
+    <script type="text/javascript" src="src/buttons.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Extension Installer</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="spinnerScreen" class="screen">
+            <div class="spinnerContent centerMid">
+                <img id="spinnerScreenImage" class="imageSpinner" />
+                <span id="spinnerScreenText" class="spinnerScreenText"></span>
+            </div>
+        </div>
+
+        <div id="mainScreen" class="screen mainContainer">
+            <div class="header">
+                <div id="progressDiv">
+                    <div class="topBar">
+                        <img id="extIcon" class="pull-left" src="images/extIcon.svg" />
+                        <div class="pull-left title">
+                            <div id="progressText" class="ellip-line">
+                                <div id="progressTextAction" class="ellip-line"></div>
+                                <div id="progressTextPercent" class="ellip-line"></div>
+                            </div>
+                        </div>
+                        <img id='cancelButtonImage' class='pull-right pngImageFix' ondragstart='return false;' src="images/cancelButton.svg"onclick="cancelButtonClicked()" />
+                    </div>
+                    <div class="progressContainer">
+                        <div id="progressTrack"></div>
+                    </div>
+                </div>
+            </div>
+			</div>
+            <div id="marketingIFrameDiv">
+                <div class="content text-center">
+            <div class="centerMid">
+                <img src="images/prodIcon.png"/>
+                <div class="productName">Extension Name Here</div>
+                <div class="productVersion">Version Number Here</div>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class='productIcon'><img src='images/extIconDark.svg' /></div>
+            <p class='description' >While you're waiting, why not check some of my other extensions!</p>
+            <div class="text-center learnMore"><a onclick="learnMoreClicked()" href="#" class="btn btn-primary">Learn More</a></div>
+        </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

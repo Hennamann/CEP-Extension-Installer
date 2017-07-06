@@ -2,6 +2,8 @@
 
 CEP Extension Installer, is a redistributable installer for CEP extensions, it's meant to be used by extension developers as an efficent and professional way to package their extensions for installation outside of the Adobe Add-ons service.
 
+![](http://i.cubeupload.com/DcSbMN.png)
+
 # How it works
 
 Extension Installer is built on top of the source code found in the well known and popular, [ZXPInstaller](https://github.com/CreativeDo/ZXPInstaller) by CreativeDo, this installer simply removes the drag and drop features, replacing the extension path with a harddcoded one, as well as replacing the design by one inspired by Adobe's latest installer design.

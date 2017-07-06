@@ -37,7 +37,9 @@ You will need the following things:
 
 ### Extra Steps
 
-Since a Mac app is just a folder, it can easily be packaged, published and be "self-contained", in the case of windows, this is not the case and the installer requires several files and folders to function on Windows, making packaging of your extension difficult, at present there is no way to package an electron application to be "self-contained" on Windows. You can however use Enigma Virtual Box, to "self-contain" the installer: [http://enigmaprotector.com/en/aboutvb.html](http://enigmaprotector.com/en/aboutvb.html).
+The installer also comes with an "ad" area for advertising a website, or something similar. To modify it locate the `carousel` div and edit the `description` element with whatever text you want to display. You can also change the text of the button. 
+
+If you want to remove the "ad" from your extension, simply comment out the `carousel` div from start to end. 
 
 # Compiling (OS X)
 
@@ -66,3 +68,7 @@ You can only compile the windows executable on Windows, you will need a Mac to c
   npm run build:win
   ```
 2. You will find the compiled Windows binary in the `win` folder within the `releases` folder.
+
+### Extra Steps
+
+Since a Mac app is just a folder, it can easily be packaged, published and be "self-contained", in the case of windows, this is not the case and the installer requires several files and folders to function on Windows, making packaging of your extension difficult, at present there is no way to package an electron application to be "self-contained" on Windows. You can however use Enigma Virtual Box, to "self-contain" the installer: [http://enigmaprotector.com/en/aboutvb.html](http://enigmaprotector.com/en/aboutvb.html).
